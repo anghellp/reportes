@@ -26,7 +26,6 @@ class Clientes extends CI_Controller {
         $this->load->library('table');
         $this->load->library('pagination');
         
-   
         $config['base_url'] = base_url().'index.php/clientes/gestionar/';
         $config['total_rows'] = $this->clientes_model->count('clientes');
         $config['per_page'] = 10;
@@ -133,8 +132,10 @@ class Clientes extends CI_Controller {
            redirect(base_url());
         }
 
+        $this->data['result'] = $this->clientes_model->getById($this->uri->segment(3));
+
         $this->data['custom_error'] = '';
-        $this->data['view'] = 'clientes/visualizar';
+        $this->data['view'] = 'clientes/visualizarCliente';
         $this->load->view('tema/nav', $this->data);
 
         
