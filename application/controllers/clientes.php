@@ -134,8 +134,6 @@ class Clientes extends CI_Controller {
         }
 
         $this->data['custom_error'] = '';
-        $this->data['result'] = $this->clientes_model->getById($this->uri->segment(3));
-        $this->data['results'] = $this->clientes_model->getOsBycliente_nombre($this->uri->segment(3));
         $this->data['view'] = 'clientes/visualizar';
         $this->load->view('tema/nav', $this->data);
 
