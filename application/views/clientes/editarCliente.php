@@ -25,7 +25,7 @@
                                     <div class="form-group">
                                         <?php echo form_hidden('idClientes',$result->idClientes) ?>
                                         <label>Nombre del Cliente</label>
-                                        <input class="form-control "id="cliente_nombre" type="text" name="cliente_nombre" value="<?php echo $result->cliente_nombre; ?>"  autofocus/>
+                                        <input class="form-control "id="cliente_nombre" type="text" name="cliente_nombre" value="<?php echo $result->cliente_nombre; ?>" autofocus/>
                                     </div>
                                     <div class="form-group">
                                         <label>Dirección del Cliente</label>

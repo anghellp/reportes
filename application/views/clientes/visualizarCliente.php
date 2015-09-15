@@ -28,7 +28,7 @@
                                 </tr>
                                 <tr>
                                     <td style="text-align: right"><strong>Teléfono del Cliente</strong></td>
-                                    <td><?php echo $result->cliente_telefono ?></td>
+                                    <td style="text-transform:uppercase;"><?php echo $result->cliente_telefono; ?></td>
                                 </tr>
                                 <tr>
                                     <td style="text-align: right"><strong>Fecha de Registro del Cliente</strong></td>
